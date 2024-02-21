@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>{{ n }}</h2>
+    <input type="checkbox" id="check"/>
+    <label class="btn" for="check"><img class="o" src="static/img/{{x[0]}}.jpg" id="btnLeft1" /></label>
+     <input type="checkbox" id="check2"/>
+    <label class="btn" for="check2"><img class="o" src="static/img/{{x[1]}}.jpg" id="btnLeft2" /></label>
+     <input type="checkbox" id="check3"/>
+    <label class="btn" for="check3"><img class="o" src="static/img/{{x[2]}}.jpg" id="btnLeft3" /></label>
+    <div id="r"></div>
+    <script>
+        window.addEventListener("load",function(){
+            document.getElementById("b").addEventListener("click",function(){
+                document.getElementById("r").innerHTML = '';
+                var mes = '{{ x[0] }}';
+                var o = ''
+                if (document.getElementById('check').checked){
+                    if ('{{ x[0] }}'-2 == '{{ n }}'){
+                        o = 'ttt';
+                    }
+                }
+                if (document.getElementById('check2').checked){
+                    if ('{{ x[1] }}'-2 == '{{ n }}'){
+                        o = '2ttt';
+                    }
+                }
+                if (document.getElementById('check3').checked){
+                    if ('{{ x[2] }}'-2 == '{{ n }}'){
+                        o = '3ttt';
+                    }
+                }
+                if (o == ''){
+                    document.getElementById("r").innerHTML = "ошибка";
+                }
+                else{
+                    document.getElementById("r").innerHTML = o;
+                }
+
+            });
+        })
+    </script>
+    <input id="b" value="Проверить" type="button">
+    <div id="t"></div>
+    <div id="tt"></div>
+    <div id="ttt"></div>
+    <form action="/2" method="POST">
+        <input type="submit" value="выход">
+    </form>
+
+</body>
+</html>

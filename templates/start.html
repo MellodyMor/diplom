@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/st.css') }}">
+</head>
+<body>
+    <header>
+            <ul>
+                <a href="/" class="name">название хз какое</a>
+                <li><a href=""> Упражнение</a></li>
+                <li><a href=""> тренировка</a></li>
+                <li><a href=""> награды</a></li>
+                <li><a href=""> оплата?</a></li>
+                <li><a href=""> вход </a></li>
+            </ul>
+    </header>
+    <main>
+        <div>
+            <button id="Enter" type="button" onclick="window.location.href = '/authorization' ; " class="button">Enter</button>
+        </div>
+        <div>
+            <a href="/1" style="background: black;" class="body t text_center" type="button">1</a>
+            <a href="/2" class="body t text_center" type="button">2</a>
+        </div>
+
+    </main>
+</body>
+</html>

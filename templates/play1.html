@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/1.css') }}">
+</head>
+<body>
+    <main>
+        <div>
+            <input type="checkbox" id="btnControl1"/>
+            <label class="btn" for="btnControl1"><img class="o" src={{name}} id="btnLeft1" /></label>
+            <input type="checkbox" id="btnControl2"/>
+            <label class="btn" for="btnControl2"><img class="t" src="static/img/2.jpeg" id="btnLeft2" /></label>
+        </div>
+        <script>
+            window.addEventListener("load",function(){
+                document.getElementById("b").addEventListener("click",function(){
+                    var inp1 = document.getElementById("btnLeft1"), inp2 = document.getElementById("inp2");
+                    var mes = '{{ name }}';
+                    if(mes!=inp2){
+                        inp1.value = "";
+                        inp2.value = "";
+                        document.getElementById("res").innerHTML = "Данные не совпадают!";
+
+                    }
+                    else document.getElementById("res").innerHTML = "Данные совпадают!";
+                    if (btnControl1.checked && '{{ n }}' =='1') {
+                        document.getElementById("r").innerHTML = "нажато1"; }
+                    if (btnControl2.checked && '{{ n }}' =='2') {
+                        document.getElementById("r").innerHTML = "нажато2"; }
+                });
+            })
+        </script>
+        <input id="inp1" type="text">
+        <input id="inp2" type="text">
+        <div id="r"></div>
+        <div id="okno">
+            <div id="res"></div>
+          <a href="/1" class="close">Закрыть окно</a>
+        </div>
+        <a id="b" href="#okno">Вызвать всплывающее окно</a>
+        <form action="/2" method="POST">
+            <input type="submit" value="выход">
+        </form>
+    </main>
+</body>
+</html>

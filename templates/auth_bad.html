@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<header>
+        <a href="/" class="name">название хз какое</a>
+        <nav>
+            <ul class="menu">
+                <a href="" class="text"> Упражнение</a>
+                <a href=""> тренировка</a>
+                <a href=""> награды</a>
+                <a href=""> оплата?</a>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <form method="POST">
+      <div class="container">
+        <label><b>Введен неправильный логин или пароль</b></label>
+      </div>
+    </form>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/auth_bad.css') }}">
+</main>
+</body>
+</html>
