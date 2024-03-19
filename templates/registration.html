@@ -6,18 +6,23 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/regis.css') }}">
 </head>
 <body>
-<form action="">
-    <form method="POST">
-        <div class="container">
-        <label for="Login"><b>Логин</b></label>
-        <input type="text" placeholder="" name="Login" required>
+<form method="POST">
+  <div class="container">
+    <label for="Login"><b>Логин</b></label>
+    <input type="text" placeholder="" name="Login" required>
 
-        <label for="Password"><b>Пароль</b></label>
-        <input type="password" placeholder="" name="Password" required>
+    <label for="Password"><b>Пароль</b></label>
+    <input type="password" placeholder="" name="Password" required>
 
-        <button type="submit">Зарегистрироваться</button>
-      </div>
-    </form>
+      <label for="Roll"><b>Роль</b></label>
+          <input type="radio" name="uniqueGroup" id="opt1" class="fake-checkbox"/>
+          <label for="opt1">Учитель</label>
+
+          <input type="radio" name="uniqueGroup" id="opt2" class="fake-checkbox"/>
+          <label for="opt2">Ученик</label>
+
+    <button type="submit">Зарегистрироваться</button>
+  </div>
 </form>
 </body>
 </html>
