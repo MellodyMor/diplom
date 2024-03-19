@@ -2,7 +2,6 @@ header{
 	width: 100%;
 	background: #D8E3AB no-repeat 5% 50%;
 	height: 70px;
-    position: fixed;
 }
 form {
     font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
@@ -19,7 +18,7 @@ form {
 }
 .name{
     font-size: 36px;
-	padding-top: 10px;
+	padding-right: 150px;/*отодвинула что бы было по центру потом заменить*/
 	text-align: center;
 }
 nav {
@@ -59,13 +58,15 @@ main{
 }
 .body{
     display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
     font-size: 36px;/*размер шрифта*/
     left: 150px;
-	padding-bottom: 50px;
-	padding-top: 50px;
-	padding-left: 50px;/* отступ от края для текста*/
-	padding-right: 50px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 10px;/* отступ от края для текста*/
+	padding-right: 10px;
 	text-align: center;
 	text-decoration: none;
 }
@@ -73,7 +74,7 @@ main{
     width: 170px;
     height: 200px;
     border:1px solid;
-    margin: 5% 0;
+    margin: 5% 7%;/*второй процент это расположение спава и лево*/
     background: #25537b;
 }
 .text_center{
