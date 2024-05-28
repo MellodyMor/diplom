@@ -1,10 +1,9 @@
 import sqlite3
-db_lp = sqlite3.connect('login_password.db')
+db_lp = sqlite3.connect('r.db')
 cursor_db = db_lp.cursor()
-sql_create = '''CREATE TABLE passwords(
+sql_create = '''CREATE TABLE r(
 login TEXT PRIMARY KEY,
-password TEXT NOT NULL,
-roll TEXT NOT NULL);'''
+r TEXT NOT NULL);'''
 
 cursor_db.execute(sql_create)
 db_lp.commit()

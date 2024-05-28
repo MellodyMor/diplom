@@ -1,5 +1,5 @@
 import sqlite3
-db_lp = sqlite3.connect('login_password.db')
+db_lp = sqlite3.connect('z.db')
 cursor_db = db_lp.cursor()
 sql_create = '''CREATE TABLE passwords(
 login TEXT PRIMARY KEY,
