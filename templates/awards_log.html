@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tren.css') }}">
 </head>
 <body>
-<header>
-        <ul>
+    <header>
+            <ul>
                 <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
                 <li><a href="/tr"> Тренеровки</a></li>
                 <li><a href="/yp"> Упражнения</a></li>
                 <li><a href="/awards"> награды</a></li>
                 <li><a href="/otc"> отчет</a></li>
-                <li><a href="/exit">{{ name }}</a></li>
+                <li><a href="/exit">{{ m }}</a></li>
             </ul>
     </header>
-<main>
-    <form method="POST">
-      <div class="container">
-        <label><b>Введен неправильный логин или пароль</b></label>
-      </div>
-    </form>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/auth_bad.css') }}">
-</main>
+    <figure>
+   <img src="{{st[0]}}" width="100%">
+  </figure>
+<figure>
+   <img src="{{st[1]}}" width="100%">
+  </figure>
+<figure>
+   <img src="{{st[2]}}" width="100%">
+  </figure>
 </body>
 </html>

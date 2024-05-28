@@ -8,23 +8,162 @@
 <body>
     <header>
             <ul>
-                <a href="/" class="name">название хз какое</a>
-                <li><a href=""> Упражнение</a></li>
-                <li><a href=""> тренировка</a></li>
-                <li><a href=""> награды</a></li>
-                <li><a href=""> оплата?</a></li>
-                <li><a href=""> вход </a></li>
+                <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
+                <li><a href="/tr"> Тренеровки</a></li>
+                <li><a href="/yp"> Упражнения</a></li>
+                <li><a href="/awards"> награды</a></li>
+                <li><a href="/otc"> отчет</a></li>
+                <li><a href="/exit">{{ m }}</a></li>
             </ul>
     </header>
     <main>
-        <div>
-            <button id="Enter" type="button" onclick="window.location.href = '/authorization' ; " class="button">Enter</button>
+        <div class="wrapper">
+            <div class="cardtext">
+                <h3 align="center"> Растосторонние развитие ребенка</h3>
+                <div class="caption__decoration"></div>
+            </div>
+            <div class="block__text">
+                <p>Выберите тему, которая подходит вашему ребенку, и начните заниматься прямо сейчас! <br>
+                            Мы создали 36239 заданий для детей разных возрастов.</p>
+            </div>
+            <div class="card_all">
+                <div class="card">
+                    <div class="card_title">
+                        <a href="/1" class="topic-title topic-title--s1">Логика и мышление</a>
+                    </div>
+                    <div class="card_text">
+                        <ul class="topic-exercises-list topic-exercises-list--s1">
+                            <li class="topic-exercises-list__item">Исключаем лишнее</li>
+                            <li class="topic-exercises-list__item">Ищем общее</li>
+                            <li class="topic-exercises-list__item">Выявляем закономерности</li>
+                            <li class="topic-exercises-list__item">Решаем логические задачи</li>
+                            <li class="topic-exercises-list__item">Изучаем позицию в пространстве</li>
+                            <li class="topic-exercises-list__item">Сравниваем предметы</li>
+                        </ul>
+                    </div>
+                    <div class="card_link">
+                        <a href="">Перейти к упражнениям-></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">
+                        <a href="/" class="topic-title topic-title--s2">Математика</a>
+                    </div>
+                    <div class="card_text">
+                        <ul class="topic-exercises-list topic-exercises-list--s1">
+                            <li class="topic-exercises-list__item">Изучаем цифры</li>
+                            <li class="topic-exercises-list__item">Считаем до 100</li>
+                            <li class="topic-exercises-list__item">Складываем и вычитаем</li>
+                            <li class="topic-exercises-list__item">Сравниваем числа</li>
+                            <li class="topic-exercises-list__item">Изучаем фигуры</li>
+                            <li class="topic-exercises-list__item">Решаем задачи и примеры</li>
+                            <li class="topic-exercises-list__item">Определяем время</li>
+                            <li class="topic-exercises-list__item">Умножаем и делим</li>
+                        </ul>
+                    </div>
+                    <div class="card_link">
+                        <a href="/">Перейти к упражнениям-></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card_title">
+                        <a href="/" class="topic-title topic-title--s3">Чтение</a>
+                    </div>
+                    <div class="card_text">
+                        <ul class="topic-exercises-list topic-exercises-list--s1">
+                            <li class="topic-exercises-list__item">Учим буквы и звуки</li>
+                            <li class="topic-exercises-list__item">Читаем слоги и слова </li>
+                            <li class="topic-exercises-list__item">Читаем фразы и предложения </li>
+                            <li class="topic-exercises-list__item">Развиваем речь </li>
+                            <li class="topic-exercises-list__item">Пишем грамотно </li>
+                            <li class="topic-exercises-list__item">Изучаем части речи </li>
+                            <li class="topic-exercises-list__item">Секреты русского языка </li>
+                            <li class="topic-exercises-list__item">Знакомимся с литературой </li>
+                        </ul>
+                    </div>
+                    <div class="card_link">
+                        <a href="/">Перейти к упражнениям-></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="/1" style="background: black;" class="body t text_center" type="button">1</a>
-            <a href="/2" class="body t text_center" type="button">2</a>
+        <div class="rubber rubber--pink rubber--simple">
+            <div class="rubber__curve rubber__curve--top"></div><!--для красивого фона пока не работает-->
+            <div class="rubber__container">
+                <div class="wrapper">
+                    <div class="block block-preschool-years">
+                        <div class="caption caption_black-purple">
+                            <div class="caption__text">
+                                <h3 class="home-page-h2"><span class="caption__accent">Большое разнообразие заданий для дошкольников</span></h3>
+                                <div class="caption__decoration"></div>
+                            </div>
+                        </div>
+                        <div class="block__text d-sm">
+                            <p>Задания и упражнения на сайте нацелены на всестороннее развитие детей разных возрастных групп.</p>
+                            <p><span class="purple">Для малышей от 2 до 4 лет</span> разработаны специальные развивающие и обучающие игры, стимулирующие тягу к знаниям и позволяющие легко усваивать новый материал.</p>
+                            <p><span class="purple">Для детей-дошкольников от 5 до 7 лет</span> опытные педагоги и
+                            психологи разработали программу легкой и увлекательной подготовки к школе.</p>
+                            <p>Все задания и игры направлены на гармоничное развитие правого и левого полушарий мозга.
+                            Эффективно помогают осваивать необходимые навыки для поступления в школу.
+                            Все задания сопровождаются озвучкой от профессиональных дикторов, что упрощает обучение детей,
+                            не умеющих читать. </p>
+                        </div>
+                        <div class="set-screen">
+                            <div class="set year-set-short">
+                                <a href="/uprazhneniya/2-goda" class="card card-year-compact card-year-compact--2">
+                                    <div class="card__image">
+                                        <img alt="2 года" data-src="/img-v2/icons/years/2.png" src="/img-v2/icons/years/2.png" lazy="loaded">
+                                    </div>
+                                    <div class="card__info">
+                                        <span class="ico ico-sound"></span>Все задания озвучены
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="card__title">
+                                            2 года
+                                        </div>
+                                        <div class="card__text">
+                                            3 846 заданий
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/uprazhneniya/2-goda" class="card card-year-compact card-year-compact--2">
+                                    <div class="card__image">
+                                        <img alt="2 года" data-src="/img-v2/icons/years/2.png" src="/img-v2/icons/years/2.png" lazy="loaded">
+                                    </div>
+                                    <div class="card__info">
+                                        <span class="ico ico-sound"></span>Все задания озвучены
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="card__title">
+                                            3 года
+                                        </div>
+                                        <div class="card__text">
+                                            3 846 заданий
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="/uprazhneniya/2-goda" class="card card-year-compact card-year-compact--2">
+                                    <div class="card__image">
+                                        <img alt="2 года" data-src="/img-v2/icons/years/2.png" src="/img-v2/icons/years/2.png" lazy="loaded">
+                                    </div>
+                                    <div class="card__info">
+                                        <span class="ico ico-sound"></span>Все задания озвучены
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="card__title">
+                                            4 года
+                                        </div>
+                                        <div class="card__text">
+                                            3 846 заданий
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </main>
 </body>
 </html>

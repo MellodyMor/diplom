@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Передача данных из HTML в Python</title>
+</head>
+<body>
+    <p id="myParagraph">Значение для передачи</p>
+    <button onclick="sendData()">Отправить данные</button>
+
+    <script>
+        function sendData() {
+            // Получаем значение из тега <p>
+            const value = document.getElementById('myParagraph').innerText;
+
+            // Создаем объект XMLHttpRequest
+            const xhr = new XMLHttpRequest();
+
+            // Устанавливаем метод POST и URL для отправки данных
+            xhr.open('POST', '/get-text', true);
+
+            // Устанавливаем заголовок Content-Type для отправки данных в формате JSON
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            // Отправляем данные на сервер в формате JSON
+            xhr.send(JSON.stringify({ data: value }));
+
+            // Выводим сообщение после завершения запроса
+            xhr.onload = function() {
+                if (xhr.status == 200) {
+                    alert('Данные успешно отправлены на сервер');
+                } else {
+                    alert('Произошла ошибка при отправке данных');
+                }
+            };
+        }
+    </script>
+</body>
+</html>

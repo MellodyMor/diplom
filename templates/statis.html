@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/statis.css') }}">
+</head>
+<body>
+    <header>
+            <ul>
+                <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
+                <li><a href="/tr"> Тренеровки</a></li>
+                <li><a href="/yp"> Упражнения</a></li>
+                <li><a href="/awards"> награды</a></li>
+                <li><a href="/otc"> отчет</a></li>
+                <li><a href="/exit">{{ name }}</a></li>
+            </ul>
+    </header>
+    <h3>Процент правильности прохождения заданий</h3>
+    <div class="box">
+      <div class="box-inner">
+        <span>{{m}}%</span>
+      </div>
+    </div>
+    <div id="oil" style="width: 500px; height: 400px; float: right;margin-right:10%;"></div>
+    <script src="https://www.google.com/jsapi"></script>
+    <script>
+   google.load("visualization", "1", {packages:["corechart"]});
+   google.setOnLoadCallback(drawChart);
+   function drawChart() {
+   p = "{{p}}";
+   p = p.split('/');
+
+   var lst = [];
+   var lsts = [['попытка', 'правильно', 'не правильно']];
+   for(let i = 0; i < "{{l}}"; i++){
+        lsts.push([p[i].slice(0,1),  Number(p[i].slice(2,5)), Number(p[i].slice(6,9))]);
+   }
+    var data = google.visualization.arrayToDataTable(lsts);
+    var options = {
+     title: 'все попытки',
+     hAxis: {title: 'номер попытки'},
+     vAxis: {title: 'процент'}
+    };
+    var chart = new google.visualization.ColumnChart(document.getElementById('oil'));
+    chart.draw(data, options);
+   }
+  </script>
+
+<a href="/">назад</a>
+</body>
+</html>

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/exit.css') }}">
 </head>
 <body>
 <header>
@@ -15,13 +16,9 @@
                 <li><a href="/exit">{{ name }}</a></li>
             </ul>
     </header>
-<main>
-    <form method="POST">
-      <div class="container">
-        <label><b>Введен неправильный логин или пароль</b></label>
-      </div>
-    </form>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/auth_bad.css') }}">
-</main>
+<h5>короче здесь надо с делать что-то типо самого пользователя его аватар и тд и тд</h5>
+<h5>пока пусть будет только кнопка выйти из пользователя</h5>
+<a href="/logout">выйти из пользователя</a>
+
 </body>
 </html>

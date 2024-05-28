@@ -16,7 +16,7 @@
 <body>
 <div>
     <div style="float: right; margin-top: 40px;margin-right: 20px;background: #f0f;padding: 10px;">
-        <a id="vid" href="/vid">Закончить тренировку</a>
+        <a id="tr_otc" href="/tr_och">Закончить тренировку</a>
     </div>
     <div style="text-align: center;
     margin-left: 250px;
@@ -47,7 +47,7 @@
     <div id="r"></div>
     <div id="okno">
             <div id="res"></div>
-              <a href="/2" class="close">Закрыть окно</a>
+              <a href="/tr" class="close">Закрыть окно</a>
     </div>
             <p id="myHeading" type="text" name="test" style="color:#fff"></p>
             <a id="b" href="#okno" onclick="sendData()">проверить</a>
@@ -87,13 +87,13 @@
                 }
 
                 // Получаем значение из тега <p>
-                const value = document.getElementById('r').innerText;
+                const value = document.getElementById('myHeading').innerText;
 
                 // Создаем объект XMLHttpRequest
                 const xhr = new XMLHttpRequest();
 
                 // Устанавливаем метод POST и URL для отправки данных
-                xhr.open('POST', '/get-text', true);
+                xhr.open('POST', '/get-text-tr', true);
 
                 // Устанавливаем заголовок Content-Type для отправки данных в формате JSON
                 xhr.setRequestHeader('Content-Type', 'application/json');
