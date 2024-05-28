@@ -2,22 +2,15 @@ main{
     position: relative;
     top: 150px;
 }
-#btnControl1 {
-    display: none;
+.otvet{
+text-align: center;
 }
-
-#btnControl1:checked + label > img {
-    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #0000f4;
+nav{
+text-align:right;
+margin-right:50px;
 }
-#btnControl2 {
-    display: none;
-}
-
-#btnControl2:checked + label > img {
-    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #0000f4;
-}
-img:hover{
-    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #4070f4;
+.otv{
+margin-top:100px;
 }
 #okno {
         width: 300px;
@@ -48,3 +41,25 @@ img:hover{
         cursor:pointer;
       }
       .close:hover {background: #e6e6ff;}
+img{
+width:20%;
+}
+img#btnLeft1 {
+    margin-left: 17%;
+    margin-top: 5%;
+}
+.b{
+font-size: 1.5em}
+.r{
+display:flex;
+justify-content: center;
+    gap: 15px;
+}
+.rr{
+}
+.t{
+display: table;
+}
+.n1{
+width:50%;
+}

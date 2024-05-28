@@ -1,0 +1,370 @@
+header{
+  width: 100%;
+  background: #c98fc0 no-repeat 5% 50%;
+  height: 100px;
+}
+form {
+    font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+    border: 1px solid black;/*Цвет, размер и тип границы */
+    -webkit-border-radius: 20px;/*Скругляем углы */
+    color: #000000;/*Цвет label */
+    width: 25%; /*Ширина формы */
+    margin-right: auto; /*Положение формы */
+    margin-left: auto; /*Положение формы */
+    text-align: center; /*Центровка текста*/
+}
+.container {
+    padding: 30px; /*Размер внутренних отступов контейнера*/
+}
+.name{
+    font-size: 36px;
+  text-align: center;
+}
+nav {
+  float: left;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+ul {
+  font-family: "Chivo Mono", monospace;
+  display: flex;
+  gap:72px;
+  flex-direction: row;
+  align-items: center;
+}
+ul li{
+    list-style:none;
+    padding: 15px;
+}
+ul li a{
+    font-size: 26px;
+    font-width: 900;
+    margin-top: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 50%;
+    transition: 0.5s ease;
+}
+ul:hover li a{
+    color:#30edf4;
+}
+ul:hover li a:not(:hover){
+    color: white;
+}
+main{
+    position: relative;
+}
+.body{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    font-size: 36px;/*размер шрифта*/
+    left: 150px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;/* отступ от края для текста*/
+  padding-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.t{
+    width: 170px;
+    height: 200px;
+    border:1px solid;
+    margin: 5% 7%;/*второй процент это расположение спава и лево*/
+    background: #25537b;
+}
+.text_center{
+    color: #ffffff;
+    text-align: center;
+}
+.text{
+    width: 70%;
+    height: 50px;
+    border:1px solid;
+    margin:auto;
+    background: #25537b;
+    color: #ffffff;
+}
+/*основная часть*/
+a {
+    -webkit-text-decoration-skip: objects;
+    background-color: transparent;
+    color: #b3007d;
+    text-decoration: none;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.125rem;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.cardtext {
+    align-items: center;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 1.1;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+.cardtext .caption__decoration {
+    display: none;
+}
+.cardtext .caption__accent {
+    color: #98248f;
+}
+.block__text {
+    display: none;
+    margin-bottom: 2rem;
+}
+.card_all{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:15px;
+    margin-right:15px;
+}
+.card_all .card {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(33.33333% - 30px);
+}
+.card .card__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.topic-title {
+    color: #212529;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    min-height: 60px;
+    padding: 0 0 0 60px;
+}
+.topic-title.topic-title--s1 {
+    background: url(/img/4.jpg) no-repeat 55px 50%,url(img/logik.jpg) no-repeat 0 50%;
+    background-size: 65% 45px,45px 48px;
+}
+.topic-title.topic-title--s2 {
+    background: url(/img/4.jpg) no-repeat 55px 50%,url(img/math.jpg) no-repeat 0 50%;
+    background-size: 65% 45px,45px 48px;
+}
+.topic-title.topic-title--s3 {
+    background: url(/img/4.jpg) no-repeat 55px 50%,url(img/read.jpg) no-repeat 0 50%;
+    background-size: 65% 45px,45px 48px;
+}
+.card {
+    background: url(/img/card-sheet.png) repeat-x right 10px,#fff;
+    box-shadow: 0 0 27px 0 hsla(39,16%,83%,.32);
+    margin-bottom: 15px;
+    padding: 30px 20px;
+}
+.card .card__text {
+    display: none;
+}
+.topic-exercises-list {
+    font-size: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topic-exercises-list--s1 {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.topic-exercises-list {
+    font-size: 1.25rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.topic-exercises-list .topic-exercises-list__item {
+    line-height: 1.25;
+    padding: 1px;
+    padding-left: 1.125rem;
+}
+.topic-exercises-list.topic-exercises-list--s1 .topic-exercises-list__item:before {
+    background-color: #b3007d;
+}
+.topic-exercises-list .topic-exercises-list__item:before {
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 0.625rem;
+    margin-left: -1.125rem;
+    margin-right: 0.5rem;
+    margin-top: -0.3rem;
+    vertical-align: middle;
+    width: 0.625rem;
+}
+.sheet-topic-set .card__link {
+    display: block;
+    font-size: 1.125rem;
+}
+.sheet-topic-set .card__link a:after {
+    content: " >";
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+/*для области с возврастом*/
+.rubber--pink .rubber__container {
+    background: #ffeee9;
+}
+.rubber.rubber--simple .rubber__container {
+    background-image: none;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.block {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+.block-preschool-years {
+    font-size: 1rem;
+}
+.caption--black-purple, .caption_black-purple {
+    color: #98248f;
+}
+@media screen and (min-width: 768px)
+.caption {
+    line-height: 1.25;
+    text-align: left;
+}
+.caption {
+    align-items: center;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 1.1;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+.home-page-h2 {
+    font-weight: 700;
+}
+.caption--black-purple .caption__accent, .caption_black-purple .caption__accent {
+    color: #000;
+}
+.caption--black-purple .caption__decoration, .caption_black-purple .caption__decoration {
+    background: url(img/caption-decor-purple.png);
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+.block .block__text {
+    margin-bottom: 2rem;
+}
+p {
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.block-preschool-years .block__text {
+    display: block;
+    font-size: 1.125rem;
+}
+.purple {
+    color: #98248f;
+}
+.set-screen {
+    margin: 0 -10px;
+    overflow-x: scroll;
+    padding: 0 10px;
+}
+.block-preschool-years .year-set-short {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.block-preschool-years .year-set-short .card {
+    word-wrap: break-word;
+    width: calc(33.33333% - 10px);
+    box-sizing: border-box;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.year-set-short .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 38px;
+}
+.card-year-compact.card-year-compact--2, .card-year-compact.card-year-compact--21 {
+    background-color: #a08ac5;
+    box-shadow: 0 8px 0 0 #795999, 0 0 29px 0 hsla(38,15%,67%,.7);
+}
+.card-year-compact {
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.card-year-compact .card__image {
+    margin: 15px 0;
+}
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+.card-year-compact .card__info {
+    font-size: .875rem;
+    margin-bottom: 10px;
+}
+.ico-sound {
+    background: url(/img-v2/icons/sound.png) no-repeat 50% 50%;
+    display: inline-block;
+    height: 16px;
+    margin-right: 0.3rem;
+    vertical-align: text-bottom;
+    width: 16px;
+}
+.card-year-compact.card-year-compact--2 .card__body, .card-year-compact.card-year-compact--21 .card__body {
+    background-color: #9378ac;
+    border-top: 1px solid #7c5d99;
+}
+.card-year-compact .card__body {
+    padding-bottom: 15px;
+}
+.card-year-compact .card__title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.card-year-compact .card__text {
+    font-size: .875rem;
+}

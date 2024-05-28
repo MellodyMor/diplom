@@ -1,0 +1,256 @@
+header{
+  width: 100%;
+  background: #c98fc0 no-repeat 5% 50%;
+  height: 100px;
+}
+form {
+    font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+    border: 1px solid black;/*Цвет, размер и тип границы */
+    -webkit-border-radius: 20px;/*Скругляем углы */
+    color: #000000;/*Цвет label */
+    width: 25%; /*Ширина формы */
+    margin-right: auto; /*Положение формы */
+    margin-left: auto; /*Положение формы */
+    text-align: center; /*Центровка текста*/
+}
+.container {
+    padding: 30px; /*Размер внутренних отступов контейнера*/
+}
+.name{
+    font-size: 36px;
+  text-align: center;
+}
+nav {
+  float: left;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+ul {
+  font-family: "Chivo Mono", monospace;
+  display: flex;
+  gap:72px;
+  flex-direction: row;
+  align-items: center;
+}
+ul li{
+    list-style:none;
+    padding: 15px;
+}
+ul li a{
+    font-size: 26px;
+    font-width: 900;
+    margin-top: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 50%;
+    transition: 0.5s ease;
+}
+ul:hover li a{
+    color:#30edf4;
+}
+ul:hover li a:not(:hover){
+    color: white;
+}
+main{
+    position: relative;
+}
+.body{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    font-size: 36px;/*размер шрифта*/
+    left: 150px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;/* отступ от края для текста*/
+  padding-right: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.t{
+    width: 170px;
+    height: 200px;
+    border:1px solid;
+    margin: 5% 7%;/*второй процент это расположение спава и лево*/
+    background: #25537b;
+}
+.text_center{
+    color: #ffffff;
+    text-align: center;
+}
+.text{
+    width: 70%;
+    height: 50px;
+    border:1px solid;
+    margin:auto;
+    background: #25537b;
+    color: #ffffff;
+}
+/*для начала слайда*/
+.rubber--shadow-top {
+    box-shadow: inset 0 10px 6px -10px hsla(38,15%,67%,.7);
+    padding-top: 30px;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exercises-main-page .el-breadcrumb {
+    display: none;
+}
+.el-breadcrumb {
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1;
+    margin: 0 0 1rem;
+    padding: 0;
+}
+.el-breadcrumb:after, .el-breadcrumb:before {
+    content: "";
+    display: table;
+}
+.el-breadcrumb__item {
+    float: left;
+}
+.el-breadcrumb__inner {
+    color: #212529;
+}
+.el-breadcrumb__inner a, .el-breadcrumb__inner.is-link {
+    color: #303133;
+    text-decoration: none;
+}
+.el-breadcrumb__separator {
+    color: #c0c4cc;
+    margin: 0 9px;
+}
+/*чтение*/
+.exercises-catalog .exercises-list-preview .caption {
+    text-align: left;
+}
+.caption--purple-black, .caption_purple-black {
+    color: #000;
+}
+.caption {
+    align-items: center;
+    display: flex;
+    font-size: 1.9rem;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 1.1;
+    margin-bottom: 0.8em;
+    text-align: center;
+}
+.exercises-catalog .exercises-list-preview .caption h2 {
+    cursor: pointer;
+    font-weight: 700;
+}
+.caption--purple-black .caption__accent, .caption_purple-black .caption__accent {
+    color: #98248f;
+}
+.h2, h2 {
+    font-size: 2rem;
+}
+a {
+    -webkit-text-decoration-skip: objects;
+    background-color: transparent;
+    color: #dbb4d5;
+    text-decoration: none;
+}
+.caption .caption__controls {
+    display: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.set-screen {
+    margin: 0 -10px;
+    padding: 0 10px;
+}
+.exercises-list-preview .exercises-set {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-top: 5px;
+}
+.exercises-list-preview .exercises-set .card {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 34vw;
+}
+.exercises-list-preview .exercises-set .card {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(20% - 30px);
+.exercise-card .card__image {
+    margin-bottom: 1rem;
+}
+.exercise-icon {
+    height: 0;
+    padding-top: 100%;
+    position: relative;
+    width: 100%;
+}
+.exercise-icon.exercise-icon--style-3 .exercise-icon__media {
+    background-color: #dbb4d5;
+    border-color: #c98fc0;
+    box-shadow: 0 0 0 0.24rem #dbb4d5;
+}
+.exercise-icon .exercise-icon__media {
+    align-items: center;
+    background-color: #c98fc0;
+    border: 2px dashed #ff2f2e;
+    border-radius: 10px;
+    box-shadow: 0 0 0 0.24rem #c98fc0;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    padding: 15px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.exercise-icon .exercise-icon__media img {
+    max-height: 100%;
+    max-width: 100%;
+}
+img {
+    border-style: none;
+    vertical-align: middle;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.progress .progress__item:last-child {
+    margin-right: 0;
+}
+.progress .progress__item {
+    background-color: #d4d4d4;
+    flex-grow: 1;
+    height: 3px;
+    margin-right: 2px;
+}
+.exercise-card .card__title {
+    font-weight: 400;
+    line-height: 1;
+}
+.exercise-card .card__title a {
+    color: #212529;
+}

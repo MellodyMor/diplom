@@ -1,0 +1,170 @@
+* {
+  box-sizing:border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #ffffff;
+}
+
+.box {
+  float: left;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 10px auto;
+  text-align: center;/*для текста*/
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.box-inner {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  z-index: 5;
+  border-radius: 50%;
+  background:#2b2b2b;
+}
+
+.box span {
+  display: block;
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: bold;
+  color:#ffffff;/*цвет номера*/
+  z-index: 10;
+}
+
+.box:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  clip: rect(0 200px 100px 0);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  background: #50c690; /*цвет полосы*/
+}
+
+.box:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  clip: rect(0 100px 200px 0);
+  -webkit-transform: rotate(150deg);
+  transform: rotate(150deg);
+  background: #50c690;
+
+}
+header{
+  width: 100%;
+  background: #c98fc0 no-repeat 5% 50%;
+  height: 100px;
+}
+form {
+    font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+    border: 1px solid black;/*Цвет, размер и тип границы */
+    -webkit-border-radius: 20px;/*Скругляем углы */
+    color: #000000;/*Цвет label */
+    width: 25%; /*Ширина формы */
+    margin-right: auto; /*Положение формы */
+    margin-left: auto; /*Положение формы */
+    text-align: center; /*Центровка текста*/
+}
+.container {
+    padding: 30px; /*Размер внутренних отступов контейнера*/
+}
+.name{
+    font-size: 36px;
+  text-align: center;
+}
+nav {
+  float: left;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+ul {
+  font-family: "Chivo Mono", monospace;
+  display: flex;
+  gap:72px;
+  flex-direction: row;
+  align-items: center;
+}
+ul li{
+    list-style:none;
+    padding: 15px;
+}
+ul li a{
+    font-size: 26px;
+    font-width: 900;
+    margin-top: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 50%;
+    transition: 0.5s ease;
+}
+ul:hover li a{
+    color:#30edf4;
+}
+ul:hover li a:not(:hover){
+    color: white;
+}
+main{
+    position: relative;
+}
+.body{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    font-size: 36px;/*размер шрифта*/
+    left: 150px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;/* отступ от края для текста*/
+    padding-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.t{
+    width: 170px;
+    height: 200px;
+    border:1px solid;
+    margin: 5% 7%;/*второй процент это расположение спава и лево*/
+    background: #25537b;
+}
+.text_center{
+    color: #ffffff;
+    text-align: center;
+}
+.text{
+    width: 70%;
+    height: 50px;
+    border:1px solid;
+    margin:auto;
+    background: #25537b;
+    color: #ffffff;
+}
