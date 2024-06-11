@@ -1,6 +1,6 @@
 function sendData() {
             var inp = document.getElementsByName('nameRadio');
-            var o = ''
+            var o = '';
             if (document.getElementById('btnControl5').checked){
                 if (inp[0].value == n){
                     o = 'правильно';

@@ -56,3 +56,58 @@ button:hover {
 .label {
   cursor: pointer;
 }
+header{
+  width: 100%;
+  background: #c98fc0 no-repeat 5% 50%;
+  height: 100px;
+}
+form {
+    font: 14px Stem-Regular,arial, sans-serif;/*Выбираем шрифт */
+    border: 1px solid black;/*Цвет, размер и тип границы */
+    -webkit-border-radius: 20px;/*Скругляем углы */
+    color: #000000;/*Цвет label */
+    width: 25%; /*Ширина формы */
+    margin-right: auto; /*Положение формы */
+    margin-left: auto; /*Положение формы */
+    text-align: center; /*Центровка текста*/
+}
+.container {
+    padding: 30px; /*Размер внутренних отступов контейнера*/
+}
+.name{
+    font-size: 36px;
+  text-align: center;
+}
+nav {
+  float: left;
+}
+nav ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+ul {
+  font-family: "Chivo Mono", monospace;
+  display: flex;
+  gap:72px;
+  flex-direction: row;
+  align-items: center;
+}
+ul li{
+    list-style:none;
+    padding: 15px;
+}
+ul li a{
+    font-size: 26px;
+    font-width: 900;
+    margin-top: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 50%;
+    transition: 0.5s ease;
+}
+ul:hover li a{
+    color:#30edf4;
+}
+ul:hover li a:not(:hover){

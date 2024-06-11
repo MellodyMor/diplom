@@ -160,7 +160,6 @@ main{
 a {
     -webkit-text-decoration-skip: objects;
     background-color: transparent;
-    color: #dbb4d5;
     text-decoration: none;
 }
 .caption .caption__controls {
@@ -253,4 +252,32 @@ img {
 }
 .exercise-card .card__title a {
     color: #212529;
+}
+.exercises-catalog .nav-block .nav-block__label {
+    color: #98248f;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.el-select {
+    display: inline-block;
+    position: relative;
+}
+.exercises-catalog .nav-block {
+    background-color: #fdeee9;
+    border-radius: 0.2rem;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+.exercises-catalog.layout .exercises-catalog__nav {
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: calc(100% - 10px);
+    }
+    .exercises-catalog.layout .exercises-catalog__nav {
+    margin-left: 5px;
+    margin-right: 5px;
 }
