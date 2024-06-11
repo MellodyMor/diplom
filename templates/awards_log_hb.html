@@ -16,15 +16,17 @@
                 <li><a href="/exit">{{ m }}</a></li>
             </ul>
     </header>
-<h2>надо сюда картиночки</h2>
-    <figure>
-   <img src="static/img/медальки/первая медаль чб.jpg" width="100%">
-  </figure>
-<figure>
-   <img src="static/img/медальки/5 трен чб.jpg" width="100%">
-  </figure>
-<figure>
-   <img src="static/img/медальки/10 тр чб.jpg" width="100%">
-  </figure>
+<h2 style="text-align: center">Занимайтесть и собирите колекцию медалек</h2>
+<script>
+    img = "{{sts}}";
+    img = img.split(',');
+    for (let i = 0; i < img.length-1; ++i) {
+     let div = document.createElement("div");
+     let image = document.createElement("img");
+     image.src = img[i];
+     div.appendChild(image);
+     document.body.appendChild(div);
+}
+</script>
 </body>
 </html>

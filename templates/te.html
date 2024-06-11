@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/t_start.css') }}">
 </head>
 <body>
-    <header>
+ <header>
             <ul>
                 <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
                 <li><a href="/tr"> Тренеровки</a></li>
@@ -16,18 +16,10 @@
                 <li><a href="/exit">{{ name }}</a></li>
             </ul>
     </header>
-    <div style="text-align: center;">
-        <h2 style="color: #fff; font: 30px JOAN,arial, sans-serif;/*Выбираем шрифт */">Подготовтесь и нажимайте старт для начала тренировки</h2>
-        <a href="/tr" style="text-decoration: none; color: #000"><h2 style="
-
-        background: #fff;
-    padding: 1%;
-    margin-right: 300px;
-    margin-left: 300px;">Старт</h2></a>
-</div>
-    <img src="static/img/ej.png" width="25%" style="
-    position: absolute;
-    top: 350px;
-    z-index: 1;">
+ <div style="text-align: center;">
+    <h2>Перед тем как начать тренировку необходимо авторизоваться</h2>
+    <a href="/authorization" >Пойти авторизацию</a>
+ <a href="/">Вернуться на основную страницу</a>
+    </div>
 </body>
 </html>

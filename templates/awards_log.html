@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tren.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/log_tich.css') }}">
 </head>
 <body>
     <header>
@@ -16,14 +16,19 @@
                 <li><a href="/exit">{{ m }}</a></li>
             </ul>
     </header>
-    <figure>
-   <img src="{{st[0]}}" width="100%">
-  </figure>
-<figure>
-   <img src="{{st[1]}}" width="100%">
-  </figure>
-<figure>
-   <img src="{{st[2]}}" width="100%">
-  </figure>
+    <main>
+<h2 style="text-align: center">Занимайтесть и собирите колекцию медалек</h2>
+<script>
+    img = "{{sts}}";
+    img = img.split(',');
+    for (let i = 0; i < img.length-1; ++i) {
+     let div = document.createElement("div");
+     let image = document.createElement("img");
+     image.src = img[i];
+     div.appendChild(image);
+     document.body.appendChild(div);
+}
+</script>
+</main>
 </body>
 </html>

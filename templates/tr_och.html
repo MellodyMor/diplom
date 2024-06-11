@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/t_start.css') }}">
 </head>
 <body>
-<h1>хороший результат {{p}}/{{v}}</h1>
-<h1>{{n_m}}<img src="{{medal}}" width="100%"></h1>
-<a href="/">на главную</a>
+ <header>
+            <ul>
+                <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
+                <li><a href="/tr"> Тренеровки</a></li>
+                <li><a href="/yp"> Упражнения</a></li>
+                <li><a href="/awards"> награды</a></li>
+                <li><a href="/otc"> отчет</a></li>
+                <li><a href="/exit">{{ name }}</a></li>
+            </ul>
+    </header>
+<div style="text-align: center;">
+    <h1 style="color: #fff; font: 30px JOAN,arial, sans-serif;/*Выбираем шрифт */">Результат:{{p}}/{{v}}</h1>
+    <h1 style="color: #fff; font: 30px JOAN,arial, sans-serif;/*Выбираем шрифт */">{{mess}}</h1>
+    <h1 style="color: #fff; font: 30px JOAN,arial, sans-serif;/*Выбираем шрифт */">{{n_m}}</h1>
+    <img src="{{medal}}" width="25%">
+    <a href="/" style="text-decoration: none; color: #000"><h2 style="background: #fff;padding: 1%;margin-right: 300px;
+    margin-left: 300px;">на главную</h2></a>
+</div>
+ <img src="static/img/ej2.png" width="30%" style="
+    position: absolute;
+    top: 450px;
+    right:5%;
+    z-index: 1;">
 </body>
 </html>

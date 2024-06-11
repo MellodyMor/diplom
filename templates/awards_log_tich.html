@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/log_tich.css') }}">
+</head>
+<body>
+<header>
+            <ul>
+                <a href="/" class="name"><img src="static/img/лого1.jpg"></a>
+                <li><a href="/tr"> Тренеровки</a></li>
+                <li><a href="/yp"> Упражнения</a></li>
+                <li><a href="/awards"> награды</a></li>
+                <li><a href="/otc"> отчет</a></li>
+                <li><a href="/exit">{{ m }}</a></li>
+            </ul>
+    </header>
+<main>
+    <h1 style="text-align: center;">Для добовление медальки выберите файд и сохраните выбор</h1>
+    <form id="uploadForm" class="box" action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Сохранить выбoр</button>
+    </form>
+
+
+<script>
+    imgi = "{{st}}";
+    img = imgi.split(',');
+
+    for (let i = 0; i < img.length; ++i) {
+     let div = document.createElement("div");
+     let image = document.createElement("img");
+     image.src = img[i];
+     div.appendChild(image);
+     document.body.appendChild(div);
+}
+document.getElementById('photoInput').onchange = function(event) {
+    var reader = new FileReader();
+    reader.onload = function() {
+        img = []
+        img.push(reader.result);
+        for (let i = 0; i < img.length; ++i) {
+         let div = document.createElement("div");
+
+         let image = document.createElement("img");
+         image.src = img[i];
+         div.appendChild(image);
+         document.body.appendChild(div);
+         }
+          // Получаем значение из тега <p>
+            const value = reader.result;
+
+            // Создаем объект XMLHttpRequest
+            const xhr = new XMLHttpRequest();
+
+            // Устанавливаем метод POST и URL для отправки данных
+            xhr.open('POST', '/pict', true);
+
+            // Устанавливаем заголовок Content-Type для отправки данных в формате JSON
+            xhr.setRequestHeader('Content-Type', 'application/json');
+
+            // Отправляем данные на сервер в формате JSON
+            xhr.send(JSON.stringify({ data: value }));
+
+    };
+    reader.readAsDataURL(event.target.files[0]);
+
+};
+</script>
+</main>
+</body>
+</html>

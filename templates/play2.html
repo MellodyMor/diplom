@@ -18,30 +18,34 @@
     <div style="float: right; margin-top: 40px;margin-right: 20px;background: #f0f;padding: 10px;">
         <a id="vid" href="/vid">Закончить тренировку</a>
     </div>
+    <div style="float: right; margin-top:140px;">
+                <h4>Баллы</h4>
+            <img class="n1" src="{{n1}}"><img class="n1" src="{{n2}}">
+            </div>
     <div style="text-align: center;
     margin-left: 250px;
     margin-top: 50px;">
-        <h2>на какой картинке {{ n }}</h2>
+        <h2>на какой картинке {{r}}</h2>
     </div>
     <div class="otvet">
         <div class="container">
             <input type="checkbox" id="check"/>
-            <label class="btn" for="check"><img class="o" src="static/img/1.jpg" id="btnLeft1" /></label>
+            <label class="btn" for="check"><img class="o" src="{{x[0]}}" id="btnLeft1" /></label>
         </div>
         <div class="container">
             <input type="checkbox" id="check2"/>
-            <label class="btn" for="check2"><img class="o" src="static/img/1.jpg" id="btnLeft2" /></label>
+            <label class="btn" for="check2"><img class="o" src="{{x[1]}}" id="btnLeft2" /></label>
         </div>
 
     </div>
     <div class="otvet">
                  <div class="container">
             <input type="checkbox" id="check3"/>
-            <label class="btn" for="check3"><img class="o" src="static/img/1.jpg" id="btnLeft3" /></label>
+            <label class="btn" for="check3"><img class="o" src="{{x[2]}}" id="btnLeft3" /></label>
         </div>
         <div class="container">
             <input type="checkbox" id="check4"/>
-            <label class="btn" for="check4"><img class="o" src="static/img/1.jpg" id="btnLeft4" /></label>
+            <label class="btn" for="check4"><img class="o" src="{{x[3]}}" id="btnLeft4" /></label>
         </div>
     </div>
     <div id="r"></div>
@@ -55,25 +59,24 @@
     <script>
             function sendData() {
                 document.getElementById("r").innerHTML = '';
-                var mes = '{{ x[0] }}';
                 var o = ''
                 if (document.getElementById('check').checked){
-                    if ('{{ x[0] }}'-2 == '{{ n }}'){
+                    if (0  == '{{ n }}'){
                         o = 'правильно';
                     }
                 }
                 if (document.getElementById('check2').checked){
-                    if ('{{ x[1] }}'-2 == '{{ n }}'){
+                    if (1  == '{{ n }}'){
                         o = 'правильно';
                     }
                 }
                 if (document.getElementById('check3').checked){
-                    if ('{{ x[2] }}'-2 == '{{ n }}'){
+                    if (2 == '{{ n }}'){
                         o = 'правильно';
                     }
                 }
                  if (document.getElementById('check4').checked){
-                    if ('{{ x[3] }}'-2 == '{{ n }}'){
+                    if (3  == '{{ n }}'){
                         o = 'правильно';
                     }
                 }
@@ -83,11 +86,11 @@
                 }
                 else{
                     document.getElementById("res").innerHTML = o;
-                document.getElementById("myHeading").innerHTML = o;
+                    document.getElementById("myHeading").innerHTML = o;
                 }
 
                 // Получаем значение из тега <p>
-                const value = document.getElementById('r').innerText;
+                const value = document.getElementById('res').innerText;
 
                 // Создаем объект XMLHttpRequest
                 const xhr = new XMLHttpRequest();

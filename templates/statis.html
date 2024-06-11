@@ -16,37 +16,99 @@
                 <li><a href="/exit">{{ name }}</a></li>
             </ul>
     </header>
-    <h3>Процент правильности прохождения заданий</h3>
-    <div class="box">
-      <div class="box-inner">
-        <span>{{m}}%</span>
-      </div>
-    </div>
+    <h3>Процент правильности прохождения заданий {{m}}%</h3>
+   <a href="/">Вернуться на главную страницу</a>
     <div id="oil" style="width: 500px; height: 400px; float: right;margin-right:10%;"></div>
+    <select name="" id="price_1" style=" float: right;">
+  <option value="all">все</option>
+  <option value="5_best">5 лучших</option>
+</select>
+    <div id="oil_tr" style="width: 500px; height: 400px; float: right;margin-right:10%;"></div>
+<select name="" id="price" style=" float: right;">
+  <option value="all">все</option>
+  <option value="5_best">5 лучших</option>
+</select>
+<label class="price_label" style=" float: right;"></label>
+   <div id="res"></div>
+<div id="selection"></div>
+<script>
+    const price = document.getElementById('price')
+    price.addEventListener("change", (e) => {
+        document.querySelector(".price_label").textContent = price[price.options.selectedIndex].value;
+        if (price[price.options.selectedIndex].value == '5_best'){
+            document.getElementById("res").innerHTML = "0" ;
+            for(let i = 0; i < "{{l}}"; i++){
+                for(let y = 0; y < "{{l}}"; y++){
+                    if(r[y][0]==rr[i]){
+                        t.push(r[y]);
+                    }
+                }
+            }
+        }
+    })
+    const price = document.getElementById('price')
+    price.addEventListener("change", (e) => {
+        document.querySelector(".price_label").textContent = price[price.options.selectedIndex].value;
+        if (price[price.options.selectedIndex].value == '5_best'){
+            document.getElementById("res").innerHTML = "0" ;
+            for(let i = 0; i < "{{l}}"; i++){
+                for(let y = 0; y < "{{l}}"; y++){
+                    if(r[y][0]==rr[i]){
+                        t.push(r[y]);
+                    }
+                }
+            }
+        }
+    })
+</script>
     <script src="https://www.google.com/jsapi"></script>
     <script>
-   google.load("visualization", "1", {packages:["corechart"]});
-   google.setOnLoadCallback(drawChart);
-   function drawChart() {
-   p = "{{p}}";
-   p = p.split('/');
-
-   var lst = [];
-   var lsts = [['попытка', 'правильно', 'не правильно']];
-   for(let i = 0; i < "{{l}}"; i++){
-        lsts.push([p[i].slice(0,1),  Number(p[i].slice(2,5)), Number(p[i].slice(6,9))]);
-   }
-    var data = google.visualization.arrayToDataTable(lsts);
-    var options = {
-     title: 'все попытки',
-     hAxis: {title: 'номер попытки'},
-     vAxis: {title: 'процент'}
-    };
-    var chart = new google.visualization.ColumnChart(document.getElementById('oil'));
-    chart.draw(data, options);
-   }
+       google.load("visualization", "1", {packages:["corechart"]});
+       google.setOnLoadCallback(drawChart);
+       function drawChart() {
+       alert('{{p}}');
+       p = '{{p}}';
+       p = p.split('/');
+       var lst = [];
+       var lsts = [['попытка', 'правильно', 'не правильно']];
+       r = [];
+       for(let i = 0; i < "{{l}}"; i++){
+            lsts.push([p[i].slice(0,10),  Number(p[i].slice(11,14)), Number(p[i].slice(15,18))]);
+       }
+        var data = google.visualization.arrayToDataTable(lsts);
+        var options = {
+         title: 'все попытки упражнений',
+         hAxis: {title: 'Дата попытки'},
+         vAxis: {title: 'процент'}
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('oil'));
+        chart.draw(data, options);
+       }
+  </script>
+    <script src="https://www.google.com/jsapi"></script>
+    <script>
+       google.load("visualization", "1", {packages:["corechart"]});
+       google.setOnLoadCallback(drawChart);
+       function drawChart() {
+       p = "{{pt}}";
+       p = p.split('/');
+       var lst = [];
+       var lsts = [['попытка', 'правильно', 'не правильно']];
+       r = [];
+       for(let i = 0; i < "{{l}}"; i++){
+            lsts.push([p[i].slice(0,10),  Number(p[i].slice(11,14)), Number(p[i].slice(15,18))]);
+       }
+        var data = google.visualization.arrayToDataTable(lsts);
+        var options = {
+         title: 'все попытки тренировок',
+         hAxis: {title: 'Дата попытки'},
+         vAxis: {title: 'процент'}
+        };
+        var chart = new google.visualization.ColumnChart(document.getElementById('oil_tr'));
+        chart.draw(data, options);
+       }
   </script>
 
-<a href="/">назад</a>
+
 </body>
 </html>

@@ -28,76 +28,364 @@
                     </span>
                     <span class="el-breadcrumb__item" aria-current="page">
                         <span role="link" class="el-breadcrumb__inner">
-                            <a href="/uprazhneniya" aria-current="page" class="router-link-exact-active router-link-active">Упражнения</a>
+                            <a href="/yp" aria-current="page" class="router-link-exact-active router-link-active">Упражнения</a>
                         </span>
                         <span role="presentation" class="el-breadcrumb__separator">/</span>
                     </span>
                 </div>
-                <div class="exercises-list-preview">
-                    <div class="caption caption_purple-black">
-                        <div class="caption__text">
-                            <h2 class="caption__accent">Чтение и грамота</h2>
-                            <div class="caption__decoration"></div>
-                        </div><div class="caption__controls">
-                        <a href="/uprazhneniya/topic/chtenie-i-gramota" class="">Посмотреть все</a>
-                    </div>
-                    </div>
-                    <div class="set-screen">
-                        <div class="exercises-set">
-                            <div class="card exercise-card">
-                                <div class="card__image">
-                                    <div class="exercise-icon exercise-icon--style-3">
-                                        <a href="/1" class="exercise-icon__media">
-                                                <img src="static/img/z1.jpg">
-                                        </a>
+
+                <div style="background: #0f0;position: absolute;right: 1%;padding-left: 4%;padding-right: 4%;
+                padding-bottom: 1%;padding-top: 1%;border-radius: 15px;background-color: Snow;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <p><select name="food" style="width: 200px;height: 50px;">
+                        <option value="r0">Возраста</option>
+                         <option value="r1">2 года</option>
+                         <option value="r2">3 года</option>
+                         <option value="r3">4 года</option>
+                       </select></p>
+                </div>
+                <div style="background: #0f0;position: absolute;right: 1%;top: 200px;padding-left: 85px;padding-right: 85px;
+                padding-bottom: 1%;padding-top: 1%;border-radius: 15px;background-color: Snow;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+                    <a><h3>Все темы</h3></a>
+                    <a><h3>Логика</h3></a>
+                    <a><h4>Исключение</h4></a>
+                    <a><h4>Лишний предмет</h4></a>
+                    <a><h4>Что лишнее</h4></a>
+                    <a><h4>Что следующее</h4></a>
+                    <a><h4>Логические задачи</h4></a>
+                    <a><h4>Логический ряд</h4></a>
+                    <a><h4>Исключение</h4></a>
+                    <a><h3>Чтение и грамота</h3></a>
+                    <a><h4>1</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h3>Математика</h3></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                    <a><h4>2</h4></a>
+                </div>
+                    <div>
+                        <div class="exercises-list-preview">
+                        <div class="caption caption_purple-black">
+                            <div class="caption__text">
+                                <h2 class="caption__accent">Логика</h2>
+                            </div><div class="caption__controls">
+                        </div>
+                        </div>
+                        <div class="set-screen">
+                            <div class="exercises-set">
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Исключение</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card__body">
-                                    <div class="progress exercise-card__progress">
-                                        <div class="progress__item"></div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/2" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card__title">
-                                        <a href="/1">Назови предмет</a>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/2">Лишний предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/3" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/3">Что лишнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Что следующее</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card exercise-card">
-                                <div class="card__image">
-                                    <div class="exercise-icon exercise-icon--style-3">
-                                        <a href="/2" class="exercise-icon__media">
-                                                <img src="static/img/z1.jpg">
-                                        </a>
+                            <div class="exercises-set">
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card__body">
-                                    <div class="progress exercise-card__progress">
-                                        <div class="progress__item"></div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/2" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card__title">
-                                        <a href="/2">Найди предмет</a>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/2">Найди предмет</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card exercise-card">
-                                <div class="card__image">
-                                    <div class="exercise-icon exercise-icon--style-3">
-                                        <a href="/3" class="exercise-icon__media">
-                                                <img src="static/img/z1.jpg">
-                                        </a>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/3" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/3">что лишнее</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="card__body">
-                                    <div class="progress exercise-card__progress">
-                                        <div class="progress__item"></div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
                                     </div>
-                                    <div class="card__title">
-                                        <a href="/3">что лишнее</a>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+
+                        <div class="exercises-list-preview">
+                        <div class="caption caption_purple-black">
+                            <div class="caption__text">
+                                <h2 class="caption__accent">Чтение и грамота</h2>
+                            </div><div class="caption__controls">
+                        </div>
+                        </div>
+                        <div class="set-screen">
+                            <div class="exercises-set">
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/2" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/2">Найди предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/3" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/3">что лишнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="exercises-list-preview">
+                        <div class="caption caption_purple-black">
+                            <div class="caption__text">
+                                <h2 class="caption__accent">Математика</h2>
+                            </div><div class="caption__controls">
+                        </div>
+                        </div>
+                        <div class="set-screen">
+                            <div class="exercises-set">
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/2" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/2">Найди предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/3" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/3">что лишнее</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card exercise-card">
+                                    <div class="card__image">
+                                        <div class="exercise-icon exercise-icon--style-3">
+                                            <a href="/1" class="exercise-icon__media">
+                                                    <img src="static/img/z1.jpg">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="card__body">
+                                        <div class="progress exercise-card__progress">
+                                            <div class="progress__item"></div>
+                                        </div>
+                                        <div class="card__title">
+                                            <a href="/1">Назови предмет</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
             </div>
         </div>
     </main>
